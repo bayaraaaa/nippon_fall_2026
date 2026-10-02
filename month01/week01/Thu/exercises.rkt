@@ -117,7 +117,6 @@
 
 ;; Exercises26
 (define age 20)
-(number->string age)
 (string-append "Age: " (number->string age))
 
 ;; Exercises27
