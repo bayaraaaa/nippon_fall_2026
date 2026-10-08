@@ -158,6 +158,8 @@
 (check-expect (grade-badge 95) (overlay (text "A" 24 "white") (circle 30 "solid" "green")))
 (check-expect (grade-badge 59) (overlay (text "F" 24 "white") (circle 30 "solid" "red")))
 
+(grade-badge 95) (overlay (text "A" 24 "white") (circle 30 "solid" "green"))
+(grade-badge 59) (overlay (text "F" 24 "white") (circle 30 "solid" "red"))
 ;; Ex03
 
 ;; student-card : Number Number Number Number Number Number -> Image
@@ -169,6 +171,8 @@
 ;; average3, grade-badge, final-status-г дуудна.
 (check-expect (student-card 80 90 70 85 8 10)
               (beside (grade-badge 80) (text "Eligible" 20 "black")))
+(student-card 80 90 70 85 8 10)
+              (beside (grade-badge 80) (text "Eligible" 20 "black"))
 
 ;; Step07
 
@@ -189,9 +193,9 @@
 ;; Хэд хэдэн шалгуур унавал эхнийхийг нь буцаана: оноо → ирц → даалгавар.
 (define (ineligibility-reason a b c d e f)
   (cond
-    [(< (average3 a b c) 60) "Low score"]
-    [(< (good-attendance? d) 80) "Low attendance"]
-    [(< (assignment-percent e f) 7) "Missing assignments"]
+    [(not (passing-average? a b c)) "Low score"]
+    [(not (good-attendance? d)) "Low attendance"]
+    [(not (assignments-complete? e f)) "Missing assignments"]
     [else "Eligible"]
   )
 )
@@ -201,3 +205,10 @@
 (check-expect (ineligibility-reason 80 90 70 79 0 10) "Low attendance")
 (check-expect (ineligibility-reason 80 90 70 85 6 10) "Missing assignments")
 (check-expect (ineligibility-reason 80 90 70 85 8 10) "Eligible")
+
+;; average5 : Number Number Number Number Number -> Number
+(define (average5 a1 a2 a3 a4 a5)
+  (/ (+ a1 a2 a3 a4 a5) 5))
+
+;; таван онооны дундаж
+(check-expect (average5 60 70 80 90 100) 80)
