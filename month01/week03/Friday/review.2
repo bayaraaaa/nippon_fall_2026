@@ -1,0 +1,40 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname review) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;; review
+
+;; Ex01
+
+;; scale-all : List-of-numbers Number -> List-of-numbers
+
+(define (scale-all numbers factor)
+  (cond
+    [(empty? numbers) empty]
+    [else (cons (* (first numbers) factor) (scale-all (rest numbers) factor))]))
+
+;; тоо бүрийг factor-оор үржүүлнэ
+(check-expect (scale-all empty 10) empty)
+(check-expect (scale-all (list 1 2) 10) (list 10 20))
+
+;; Ex02
+
+;; best-grade : NEList-of-numbers -> String
+
+(define (letter-grade n)
+  (cond
+    [(>= n 90) "A"]
+    [(>= n 80) "B"]
+    [(>= n 70) "C"]
+    [(>= n 60) "D"]
+    [else "F"]
+    
+   ))
+
+(define (best-grade list)
+  (cond
+    [(empty? list) empty]
+    [else ]))
+
+;; хамгийн их онооны үсгэн дүн. Пүрэвийн highest, 2-р долоо хоногийн letter-grade-г дууд.
+(check-expect (best-grade (list 70 95)) "A")
+(check-expect (best-grade (list 59)) "F")
