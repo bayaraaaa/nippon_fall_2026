@@ -52,6 +52,66 @@
 
 ;; endfunctions
 
+;;my-class
+
+;; Ex01
+
+(define (count-students l)
+  (cond [(empty? l) 0]
+        [else (+ 1 (count-students (rest l)))]))
+
+(count-students my-class) 
+
+;; Ex02
+
+(define (count-passing l)
+  (cond [(empty? l) 0]
+        [else (if (passing? (first l))
+                  (+ 1 (count-passing (rest l)))
+                  (count-passing (rest l)))]))
+
+(count-passing my-class)
+
+;; Ex03
+
+(define (total-final l)
+  (cond
+    [(empty? l) 0]
+    [else (+ (final-score (first l))
+             (total-final (rest l)))]))
+
+(total-final my-class)
+
+;; Ex04
+
+(define (average-final l)
+  (/ (total-final l) (count-students l)))
+
+(average-final my-class)
+
+;; Ex05
+
+(define (best-student l)
+  (cond
+    [(empty? (rest l)) (first l)]
+    [else (better-student (first l)
+                          (best-student (rest l))
+          )]))
+
+(define (top-name l)
+  (student-name (best-student l)))
+
+(top-name my-class)
+
+(define (grades l)
+  (cond
+    [(empty? l) empty]
+    [else (cons (student-grade (first l))
+                (grades (rest l)))]))
+
+(grades my-class)
+
+;; end my-class
 ;; Ex01
 
 (define (failing-students l)
@@ -68,16 +128,7 @@
 
 ;; count-failing : List-of-students -> Number
 
-(define (count-students l)
-  (cond [(empty? l) 0]
-        [else (+ 1 (count-students (rest l)))]))
-
-(define (count-passing l)
-  (cond [(empty? l) 0]
-        [else (if (passing? (first l))
-                  (+ 1 (count-passing (rest l)))
-                  (count-passing (rest l)))]))
-
-(define (count-failing l) (- (count-students l) (count-passing l)))
+(define (count-failing l)
+  (- (count-students l) (count-passing l)))
 
 (check-expect (count-failing students) 1)
