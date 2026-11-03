@@ -53,3 +53,63 @@
 ;; endfunctions
 
 ;; Ex01
+
+;; count-at-least : List-of-students Number -> Number
+
+
+(define (count-at-least s n)
+  (cond
+    [(empty? s) 0]
+    [else (if (>= (final-score (first s)) n)
+              (+ 1 (count-at-least (rest s) n))
+              (count-at-least (rest s) n)
+           )]))
+
+
+;; эцсийн оноо нь n ба түүнээс дээш сурагчийн тоо
+(check-expect (count-at-least empty 50) 0)
+(check-expect (count-at-least students 80) 2)
+(check-expect (count-at-least students 0) 4)
+
+;; Ex02
+
+;; names-with-grade : List-of-students String -> List-of-strings
+
+(define (names-with-grade s n)
+  (cond
+    [(empty? s) empty]
+    [(string=? (student-grade (first s)) n)
+              (cons (student-name (first s))
+                    (names-with-grade (rest s) n))
+           ]
+    [else (names-with-grade (rest s) n)
+     ]))
+
+;; өгөгдсөн үнэлгээтэй сурагчдын нэр
+(check-expect (names-with-grade students "A") (list "Mina"))
+(check-expect (names-with-grade students "C") empty)
+(check-expect (names-with-grade empty "A") empty)
+
+;; Ex03
+
+;; grade-row : List-of-students -> Image
+
+(define (grade-color score)
+  (if (passing? score)
+      "green"
+      "red"))
+
+(define (grade-bar score)
+  (circle 10 "solid" (grade-color score)))
+
+
+(define (grade-row s)
+  (cond
+    [(empty? s) empty-image]
+    [else (beside (grade-bar(first s))
+                  (grade-row (rest s)))]))
+
+;; сурагч бүрт радиус 10 тойрог: тэнцсэн бол ногоон, үгүй бол улаан
+(check-expect (grade-row empty) empty-image)
+(check-expect (grade-row (list aki ren))
+              (beside (circle 10 "solid" "green") (circle 10 "solid" "red")))

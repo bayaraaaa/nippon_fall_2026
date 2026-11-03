@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 void getAgeCategery(int age){
     if (0 < age && age <= 12) {
@@ -16,9 +17,9 @@ void getAgeCategery(int age){
 // ex01
 bool checkIsDigitChar(char c) {
     if (c >= '0' && c <= '9') {
-        return 'true';
+        return true;
     } else {
-        return 'false';
+        return false;
     }
 }
 // ex02
@@ -86,8 +87,7 @@ int calculateTicketPrice(int age, bool isWeekend)
     if (age < 6)
     {
         price = 0;
-    } else if (age <= 6 && age <= 17) 
-    {
+    } else if (age <= 6 && age <= 17) {
         price = 5000;
     } else if (age <= 18 && age <= 64) 
     {
@@ -100,6 +100,7 @@ int calculateTicketPrice(int age, bool isWeekend)
     {
         price = price + 2000;
     }
+    return price;
 }
 // ex06
 
