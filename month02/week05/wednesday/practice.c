@@ -75,10 +75,11 @@ int main(void)
     check_int(gcd(48, 18), 6);
     check_int(gcd(84, 36), 12);
     check_int(gcd(7, 5), 1);
-    return 0;
+    
 
     /* is_perfect : int -> int   өөрөөсөө бусад хуваагчийн нийлбэр = n бол 1 */
     check_int(is_perfect(6), 1);
     check_int(is_perfect(28), 1);
     check_int(is_perfect(12), 0);
+    return 0;
 }
