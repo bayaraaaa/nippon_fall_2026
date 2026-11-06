@@ -111,16 +111,22 @@ void printPyramid(int height)
 // ex11
 void printMonthCalendar(int firstWeekday, int daysInMonth)
 {
-    ptintf("Ня Да Лх Пү Ба Бя\n");
+    printf("Ня Да Лх Пү Ба Бя\n");
     printSpaces(firstWeekday);
     for(int day = 1; day <= daysInMonth; day++)
     {
-        printf("%3d", day);
+        printf("%2d", day);
+        if((firstWeekday + day) % 7 == 0)
+        {
+            printf("\n");
+        }
     }
     printf("\n");
 }
 int main(void)
 {
-    countdownBy(20, 5);
+    printMonthCalendar(6, 30);
+    printMonthCalendar(0, 28);
+    printMonthCalendar(5, 31);
     return 0;
 }
