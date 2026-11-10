@@ -115,7 +115,7 @@ void printMonthCalendar(int firstWeekday, int daysInMonth)
     printSpaces(firstWeekday);
     for(int day = 1; day <= daysInMonth; day++)
     {
-        printf("%2d", day);
+        printf("%3d", day);
         if((firstWeekday + day) % 7 == 0)
         {
             printf("\n");

@@ -29,7 +29,8 @@ void checkChar(char actual, char expected)
         printf("FAIL: '%c' гарсан, '%c' байх ёстой\n", actual, expected);
     }
 }
- 
+
+
 void checkBool(bool actual, bool expected)
 {
     if (actual == expected) {
