@@ -1,0 +1,51 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname debug) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+(require 2htdp/image)
+(define-struct student(name quiz project))
+
+(define aki  (make-student "Aki"  80 90))
+(define sora (make-student "Sora" 60 60))
+(define mina (make-student "Mina" 95 91))
+(define ren  (make-student "Ren"  45 55))
+
+(define students (list aki sora mina ren))
+
+(define (final-score student)
+  (+ (* (student-quiz student) 0.4) (* (student-project student) 0.6)))
+
+(define (honor? s)
+  (>= (final-score s) 90))
+
+(define (passing? s)
+  (>= (final-score s) 60))
+
+;; 1 
+(define (count-students l)
+  (cond [(empty? l) 0]
+        [else (+ 1 (count-students (rest l)))]))
+(check-expect (average-final students) 72.4)
+
+;; 2
+(define (failing-students l)
+  (cond [(empty? l) empty]
+        [else (if (passing? (first l))
+                  (failing-students (rest l))
+                  (cons (first l) (failing-students (rest l))))]))
+(check-expect (failing-students students) (list ren))
+
+;; 3
+(define (report-row s)
+  (beside (text (student-name s) 14 "black")
+          (rectangle (* 2 (final-score s)) 16 "solid" (card-color s))))
+(check-expect (report-row aki)
+              (beside (text "Aki" 14 "black")
+                      (rectangle 172 16 "solid" "green")))
+
+;; 4
+(define (count-grade l g)
+  (cond [(empty? l) 0]
+        [else (if (string=? (student-grade (first l)) g)
+                  (+ 1 (count-grade (rest l) g))
+                  (count-grade (rest l) g))]))
+(check-expect (count-grade students "A") 1)
