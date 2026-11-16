@@ -2,18 +2,20 @@
 #include <string.h>
 #include "check.h"
 
-/*
+
 void ex01()
 {
     int x = 5;
     int *p = &x;
     *p = 10;
-    printf("%d\n", x);
-    printf("%d*\n", &x);
-    printf("%d*\n", &p);
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x (&x): %p\n", &x);
+    printf("Address stored in p (p): %p\n", p);
+    printf("Address of pointer p (&p): %p\n", &p);
 
 }
-*/
+
 int countSpaces(char characters[])
 {
     int counter = 0;
@@ -54,7 +56,7 @@ void order(int *a, int *b)
 int main(void)
 {
     
-    // ex01();
+    ex01();
     /* count_spaces : char[] -> int */
     checkInt(countSpaces("GET / HTTP/1.1"), 2);
     checkInt(countSpaces("abc"), 0);
