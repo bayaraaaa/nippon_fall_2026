@@ -19,6 +19,25 @@ public class Square {
         isVisible = false;
     }
 
+    public void grow()
+    {
+        erase();
+        size = size + 15;
+        draw();
+    }
+    
+     public void shirnk()
+    {
+        erase();
+        size = size - 15;
+        draw();
+    }
+    
+    public int getArea()
+    {
+        return size * size;
+    }
+    
     /** Квадратыг харагддаг болгоно. */
     public void makeVisible() {
         isVisible = true;

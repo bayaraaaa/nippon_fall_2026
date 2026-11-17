@@ -1,0 +1,9 @@
+#BlueJ class context
+#Tue Nov 17 17:57:23 ULAT 2026
+comment0.target=VendingMachine
+comment1.target=VendingMachine()
+comment2.params=amount
+comment2.target=void insertMoney(double)
+comment3.target=double buyItem()
+comment4.target=double cancelAndRefund()
+numComments=5

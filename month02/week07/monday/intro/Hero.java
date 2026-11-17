@@ -7,16 +7,26 @@
  */
 public class Hero
 {
-    private String name;
+    private String name; // char[] name fields
     private int health;
     private int gold;
     
+    // constructor
     public Hero(String heroName)
     {
-        name = heroName;
+        name = heroName; // constructor
         health = 100;
         gold = 0;
     }
+    
+    // constructor
+    public Hero()
+    {
+        name = "bayarbileg";
+        health = 100;
+        gold = 0;
+    }
+    
     
     public void findGold(int amount)
     {

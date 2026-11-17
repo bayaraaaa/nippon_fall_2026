@@ -1,0 +1,10 @@
+#BlueJ class context
+#Tue Nov 17 17:13:27 ULAT 2026
+comment0.target=bookChapter
+comment1.target=bookChapter()
+comment2.params=count
+comment2.target=void readPage(int)
+comment3.target=int getPagesLeft()
+comment4.params=minutesPerPage
+comment4.target=double estimeMinutesToFinish(double)
+numComments=5

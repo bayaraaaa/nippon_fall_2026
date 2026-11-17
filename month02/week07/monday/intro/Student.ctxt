@@ -1,0 +1,17 @@
+#BlueJ class context
+#Tue Nov 17 15:02:32 ULAT 2026
+comment0.target=Student
+comment0.text=\n Write a description of class student here.\n\n @author (your name)\n @version (a version number or a date)\n
+comment1.params=name
+comment1.target=Student(java.lang.String)
+comment2.params=name studentAge
+comment2.target=Student(java.lang.String, int)
+comment3.params=name studentAge isStudentMale
+comment3.target=Student(java.lang.String, int, boolean)
+comment4.params=name studentAge isStudentMale studentGrades
+comment4.target=Student(java.lang.String, int, boolean, double)
+comment5.target=void calculateGrades()
+comment6.target=int getAge()
+comment7.target=java.lang.String getName()
+comment8.target=void printInfo()
+numComments=9

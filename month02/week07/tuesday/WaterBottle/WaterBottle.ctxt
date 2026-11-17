@@ -1,0 +1,10 @@
+#BlueJ class context
+#Tue Nov 17 16:51:41 ULAT 2026
+comment0.target=WaterBottle
+comment0.text=\n Write a description of class WaterBottle here.\n\n @author (your name)\n @version (a version number or a date)\n
+comment1.target=WaterBottle()
+comment2.params=sipMl
+comment2.target=void takeSip(int)
+comment3.target=void refillFull()
+comment4.target=double getPercentFull()
+numComments=5

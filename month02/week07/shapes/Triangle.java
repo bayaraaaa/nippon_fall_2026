@@ -22,6 +22,13 @@ public class Triangle {
         isVisible = false;
     }
 
+    public void teleport(int newX, int newY)
+    {
+        erase();
+        xPosition = newX;
+        yPosition = newY;
+        draw();
+    }
     /** Гурвалжинг харагддаг болгоно. */
     public void makeVisible() {
         isVisible = true;

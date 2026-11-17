@@ -19,6 +19,12 @@ public class Circle {
         isVisible = false;
     }
 
+    public double getArea()
+    {
+        double radius = diameter / 2.0;
+        return 3.14159 * radius * radius;
+    }
+    
     /** Тойргийг харагддаг болгоно. */
     public void makeVisible() {
         isVisible = true;
