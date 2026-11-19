@@ -11,17 +11,17 @@ public class Triangle {
     private int yPosition;
     private String color;
     private boolean isVisible;
-
-    /** Шинэ гурвалжин: өндөр 60, суурь 70, орой (210, 140), ногоон. */
-    public Triangle() {
-        height = 60;
-        width = 70;
-        xPosition = 210;
-        yPosition = 140;
-        color = "green";
+    
+    /** Оройн байрлал, өндөр, суурь, өнгөтэй гурвалжин. */
+    public Triangle(int x, int y, int h, int w, String col) {
+        xPosition = x;
+        yPosition = y;
+        height = h;
+        width = w;
+        color = col;
         isVisible = false;
     }
-
+    
     public void teleport(int newX, int newY)
     {
         erase();

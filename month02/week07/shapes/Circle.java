@@ -9,15 +9,16 @@ public class Circle {
     private int yPosition;
     private String color;
     private boolean isVisible;
-
-    /** Шинэ тойрог: диаметр 60, байрлал (20, 60), цэнхэр. */
-    public Circle() {
-        diameter = 60;
-        xPosition = 20;
-        yPosition = 60;
-        color = "blue";
+   
+    /** Байрлал, диаметр, өнгөтэй тойрог. */
+    public Circle(int x, int y, int d, String col) {
+        xPosition = x;
+        yPosition = y;
+        diameter = d;
+        color = col;
         isVisible = false;
     }
+   
     
     public void moveTo(int newX, int newY)
     {

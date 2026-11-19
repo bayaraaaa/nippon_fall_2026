@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Square
 comment0.text=\r\n\ Square\ \u2014\ canvas\ \u0434\u044D\u044D\u0440\ \u0437\u0443\u0440\u0436,\ \u0445\u04E9\u0434\u04E9\u043B\u0433\u04E9\u0436\ \u0431\u043E\u043B\u043E\u0445\ \u043A\u0432\u0430\u0434\u0440\u0430\u0442.\r\n
-comment1.params=
-comment1.target=Square()
-comment1.text=\u0428\u0438\u043D\u044D\ \u043A\u0432\u0430\u0434\u0440\u0430\u0442\:\ \u0442\u0430\u043B\ 60,\ \u0431\u0430\u0439\u0440\u043B\u0430\u043B\ (310,\ 120),\ \u0443\u043B\u0430\u0430\u043D.
+comment1.params=x\ y\ s\ col
+comment1.target=Square(int,\ int,\ int,\ java.lang.String)
+comment1.text=\u0411\u0430\u0439\u0440\u043B\u0430\u043B,\ \u0442\u0430\u043B,\ \u04E9\u043D\u0433\u04E9\u0442\u044D\u0439\ \u043A\u0432\u0430\u0434\u0440\u0430\u0442.
 comment10.params=
 comment10.target=void\ moveDown()
 comment10.text=\u0414\u043E\u043E\u0448\ 20\ \u043F\u0438\u043A\u0441\u0435\u043B.

@@ -10,12 +10,12 @@ public class Square {
     private String color;
     private boolean isVisible;
 
-    /** Шинэ квадрат: тал 60, байрлал (310, 120), улаан. */
-    public Square() {
-        size = 60;
-        xPosition = 310;
-        yPosition = 120;
-        color = "red";
+        /** Байрлал, тал, өнгөтэй квадрат. */
+    public Square(int x, int y, int s, String col) {
+        xPosition = x;
+        yPosition = y;
+        size = s;
+        color = col;
         isVisible = false;
     }
     
