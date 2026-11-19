@@ -18,7 +18,37 @@ public class Circle {
         color = "blue";
         isVisible = false;
     }
-
+    
+    public void moveTo(int newX, int newY)
+    {
+        erase();
+        xPosition = newX;
+        yPosition = newY;
+        draw();
+    }
+    
+    public void moveDiagonal(int newV)
+    {
+        erase();
+        xPosition = xPosition + newV;
+        yPosition = yPosition + newV;
+        draw();
+    }
+    
+    public void grow()
+    {
+        erase();
+        diameter = diameter + 10;
+        draw();
+    }
+    
+    public void shrink()
+    {
+        erase();
+        diameter = diameter - 10;
+        draw();
+    }
+    
     public double getArea()
     {
         double radius = diameter / 2.0;
@@ -98,6 +128,19 @@ public class Circle {
         draw();
     }
 
+    public int getDiameter()
+    {
+        return diameter;
+    }
+    
+    public boolean isRightOf(int other) {
+        return this.xPosition > other;
+    }
+    
+    public boolean isTopOf(int other) {
+        return this.yPosition > other;
+    }
+    
     /** Зүүн дээд булангийн x. */
     public int getX() {
         return xPosition;

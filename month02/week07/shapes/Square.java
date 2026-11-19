@@ -18,7 +18,8 @@ public class Square {
         color = "red";
         isVisible = false;
     }
-
+    
+    
     public void grow()
     {
         erase();

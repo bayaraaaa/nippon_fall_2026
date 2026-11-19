@@ -113,6 +113,21 @@ public class Triangle {
         return yPosition;
     }
 
+        /** Өндөр. */
+    public int getHeight() {
+        return height;
+    }
+
+    /** Суурь. */
+    public int getWidth() {
+        return width;
+    }
+
+    /** Суурийг d-ээр өргөсгөнө. */
+    public void makeWider(int d) {
+        changeSize(height, width + d);
+    }
+    
     private void draw() {
         if (isVisible) {
             int[] xs = {xPosition, xPosition + width / 2, xPosition - width / 2};
