@@ -10,6 +10,13 @@ public class Square {
     private String color;
     private boolean isVisible;
 
+    public Square() {
+        size = 60;
+        xPosition = 310;
+        yPosition = 120;
+        color = "red";
+        isVisible = false;
+    }
         /** Байрлал, тал, өнгөтэй квадрат. */
     public Square(int x, int y, int s, String col) {
         xPosition = x;

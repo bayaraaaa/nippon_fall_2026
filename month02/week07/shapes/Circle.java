@@ -9,6 +9,14 @@ public class Circle {
     private int yPosition;
     private String color;
     private boolean isVisible;
+    
+    public Circle() {
+        diameter = 60;
+        xPosition = 20;
+        yPosition = 60;
+        color = "blue";
+        isVisible = false;
+    }
    
     /** Байрлал, диаметр, өнгөтэй тойрог. */
     public Circle(int x, int y, int d, String col) {
