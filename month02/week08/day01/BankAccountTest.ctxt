@@ -1,0 +1,7 @@
+#BlueJ class context
+#Mon Nov 23 17:15:17 ULAT 2026
+comment0.target=BankAccountTest
+comment0.text=\n The test class BankAccountTest.\n\n @author  (your name)\n @version (a version number or a date)\n
+comment1.target=void testDepositValidation()
+comment2.target=void testNewAccountIsZeroValidation()
+numComments=3

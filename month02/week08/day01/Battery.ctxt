@@ -1,0 +1,11 @@
+#BlueJ class context
+#Mon Nov 23 17:52:03 ULAT 2026
+comment0.target=Battery
+comment0.text=\n Write a description of class Battery here.\n\n @author Khangaikhuu\n @version (a version number or a date)\n
+comment1.target=Battery()
+comment2.target=int getCharge()
+comment3.params=amount
+comment3.target=void chargeBattery(int)
+comment4.params=usage
+comment4.target=void useBattery(int)
+numComments=5

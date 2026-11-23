@@ -1,0 +1,7 @@
+#BlueJ class context
+#Mon Nov 23 17:52:03 ULAT 2026
+comment0.target=BatteryTest
+comment0.text=\n The test class BatteryTest.\n\n @author  (your name)\n @version (a version number or a date)\n
+comment1.target=void testchargeBatteryValidation()
+comment2.target=void testgetChargeIsZeroValidation()
+numComments=3

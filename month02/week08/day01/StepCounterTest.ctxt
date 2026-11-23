@@ -1,0 +1,7 @@
+#BlueJ class context
+#Mon Nov 23 17:35:36 ULAT 2026
+comment0.target=StepCounterTest
+comment0.text=\n The test class StepCounterTest.\n\n @author  (your name)\n @version (a version number or a date)\n
+comment1.target=void testaddStepsValidation()
+comment2.target=void testgetStepsIsZeroValidation()
+numComments=3

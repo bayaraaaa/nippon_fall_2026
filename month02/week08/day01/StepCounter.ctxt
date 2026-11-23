@@ -1,0 +1,10 @@
+#BlueJ class context
+#Mon Nov 23 17:24:33 ULAT 2026
+comment0.target=StepCounter
+comment0.text=\n Write a description of class StepCounter here.\n\n @author Khangaikhuu\n @version (a version number or a date)\n
+comment1.target=StepCounter()
+comment2.target=int getSteps()
+comment3.params=count
+comment3.target=void addSteps(int)
+comment4.target=void reset()
+numComments=5
