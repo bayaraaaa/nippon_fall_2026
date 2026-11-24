@@ -1,0 +1,8 @@
+#BlueJ class context
+#Tue Nov 24 17:58:50 ULAT 2026
+comment0.target=ThermostatTest
+comment1.target=void testDefaultTemperatureIs22()
+comment2.target=void testIncreaseTemp()
+comment3.target=void testMaxTemperatureLimitIs30()
+comment4.target=void testMinTemperatureLimitIs16()
+numComments=5

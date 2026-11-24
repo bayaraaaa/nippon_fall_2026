@@ -1,0 +1,7 @@
+#BlueJ class context
+#Tue Nov 24 17:02:37 ULAT 2026
+comment0.target=TargetDraver
+comment0.text=\n Write a description of class TargetDraver here.\n\n @author (your name)\n @version (a version number or a date)\n
+comment1.params=rings
+comment1.target=void drawTarget(int)
+numComments=2

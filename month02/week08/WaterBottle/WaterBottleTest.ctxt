@@ -1,0 +1,8 @@
+#BlueJ class context
+#Tue Nov 24 17:34:59 ULAT 2026
+comment0.target=WaterBottleTest
+comment1.target=void testInitialStateIsEmpty()
+comment2.target=void testFillCapsAtCapacity()
+comment3.target=void testDrinkFloorsAtZero()
+comment4.target=void testNegativeFillAndDrinkIgnored()
+numComments=5

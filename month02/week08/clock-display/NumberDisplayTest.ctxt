@@ -1,0 +1,9 @@
+#BlueJ class context
+#Tue Nov 24 15:30:55 ULAT 2026
+comment0.target=NumberDisplayTest
+comment0.text=\n NumberDisplay-\u0438\u0439\u043D \u0442\u0435\u0441\u0442.\n
+comment1.target=void startsAtZero()
+comment2.target=void incrementWrapsAtLimit()
+comment3.target=void displayValueHasTwoDigits()
+comment4.target=void outOfRangeValuesAreIgnored()
+numComments=5

@@ -1,0 +1,10 @@
+#BlueJ class context
+#Tue Nov 24 15:39:34 ULAT 2026
+comment0.target=ClockDisplayTest
+comment0.text=\n ClockDisplay-\u0438\u0439\u043D \u0442\u0435\u0441\u0442.\n
+comment1.target=void newClockShowsMidnight()
+comment2.target=void timeIsFormattedWithLeadingZeros()
+comment3.target=void tickMovesOneMinute()
+comment4.target=void tickRollsOverToTheNextHour()
+comment5.target=void tickRollsOverAtMidnight()
+numComments=6

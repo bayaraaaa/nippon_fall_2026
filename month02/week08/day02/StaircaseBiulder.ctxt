@@ -1,0 +1,7 @@
+#BlueJ class context
+#Tue Nov 24 17:12:58 ULAT 2026
+comment0.target=StaircaseBiulder
+comment0.text=\n Write a description of class StaircaseBiulder here.\n\n @author (your name)\n @version (a version number or a date)\n
+comment1.params=steps
+comment1.target=void biuldStairs(int)
+numComments=2
