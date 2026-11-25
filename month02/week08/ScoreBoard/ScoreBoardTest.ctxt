@@ -1,0 +1,7 @@
+#BlueJ class context
+#Wed Nov 25 17:37:41 ULAT 2026
+comment0.target=ScoreBoardTest
+comment1.target=void testInitialScoreAndLevel()
+comment2.target=void testLevelUpAt100Points()
+comment3.target=void testNegativePointsIgnored()
+numComments=4

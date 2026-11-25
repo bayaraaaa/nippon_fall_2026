@@ -1,0 +1,10 @@
+#BlueJ class context
+#Wed Nov 25 17:37:41 ULAT 2026
+comment0.target=ScoreBoard
+comment0.text=\n \u0422\u043E\u0433\u043B\u043E\u043E\u043C\u044B\u043D \u043E\u043D\u043E\u043E \u0431\u043E\u043B\u043E\u043D \u04AF\u0435\u0438\u0439\u0433 (level) \u0431\u04AF\u0440\u0442\u0433\u044D\u0445 \u043A\u043B\u0430\u0441\u0441.\n\n @author Khangaikhuu\n
+comment1.target=ScoreBoard()
+comment2.target=int getScore()
+comment3.target=int getLevel()
+comment4.params=points
+comment4.target=void addPoints(int)
+numComments=5

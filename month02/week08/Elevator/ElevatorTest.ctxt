@@ -1,0 +1,8 @@
+#BlueJ class context
+#Wed Nov 25 17:56:44 ULAT 2026
+comment0.target=ElevatorTest
+comment1.target=void testInitialState()
+comment2.target=void testCannotMoveWhenDoorIsOpen()
+comment3.target=void testValidFloorMoveWhenDoorClosed()
+comment4.target=void testInvalidFloorRejected()
+numComments=5

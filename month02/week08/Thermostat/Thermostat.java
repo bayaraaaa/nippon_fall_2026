@@ -6,8 +6,9 @@
 */
 public class Thermostat {
     private int temperature;
+    
     public Thermostat() {
-        temperature = 20;
+        temperature = 22;
          // TODO 1: Анхны температур 22 градус байна.
     }
     
